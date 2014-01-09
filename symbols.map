@@ -3,9 +3,4 @@ SYMBOL
     TYPE ellipse
     points 1 1 end
     filled true
-<<<<<<< HEAD
 END
-
-=======
-END
->>>>>>> 727d9aad8346c9395bd42e0b6f51a45a8cee8ee0
