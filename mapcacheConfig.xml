@@ -5,26 +5,27 @@
 
 <mapcache>
    <cache name="disk" type="disk">
-      <base>/home/jlapointe/proj/scribeui/ScribeUI/application/workspaces/testws/clone/mapcache/job-test445</base>
+      <base>/home/jlapointe/proj/scribeui/ScribeUI/application/workspaces/testws/clone/mapcache/job-xsxs473</base>
       <symlink_blank/>
    </cache>
-
-   <source name="job-test445" type="mapserver">
+   <cache name="mbtiles" type="mbtiles">
+      <dbfile>/home/jlapointe/proj/scribeui/ScribeUI/application/workspaces/testws/clone/mapcache/job-xsxs473/mapcache.mbtiles</dbfile>
+   </cache>
+   <source name="job-xsxs473" type="mapserver">
       <mapfile>/home/jlapointe/proj/scribeui/ScribeUI/application/workspaces/testws/clone/map/clone.map</mapfile>
    </source>
    
    <tileset name="default">
-      <source>job-test445</source>
-      <cache>disk</cache>
-      <grid>WGS84</grid>
-      <grid>g</grid>
+      <source>job-xsxs473</source>
+      <cache>mbtiles</cache>
+      <grid>GoogleMapsCompatible</grid>
       <format>PNG</format>
       <metatile>5 5</metatile>
       <metabuffer>10</metabuffer>
       <expires>3600</expires>
    </tileset>
 
-   <default_format>JPEG</default_format>
+   <default_format>PNG</default_format>
 
    <service type="wms" enabled="true">
       <full_wms>assemble</full_wms>
@@ -34,6 +35,6 @@
    </service>
 
    <errors>report</errors>
-   <lock_dir>/home/jlapointe/proj/scribeui/ScribeUI/application/workspaces/testws/clone/mapcache/job-test445</lock_dir>
+   <lock_dir>/home/jlapointe/proj/scribeui/ScribeUI/application/workspaces/testws/clone/mapcache/job-xsxs473</lock_dir>
 
 </mapcache>
